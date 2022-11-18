@@ -1,0 +1,25 @@
+﻿@model  CategoryVM
+@{
+    ViewBag.Title = "ListCategories";
+}
+
+ <div class="container">
+     <table class="table table-hover">
+         <tr>
+             <th>
+                 Category Name
+             </th>
+             <th>
+                 Category Description
+             </th>
+         </tr>
+         @foreach(Category item in Model.Categories)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Description</td>
+                </tr>
+            }
+     </table>
+ </div>
+
