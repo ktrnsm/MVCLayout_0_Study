@@ -32,5 +32,6 @@ namespace MVCLayout_0.Controllers
             };
             return View(cvm);
         }
+        // bu kısımdan devam edilecek
     }
 }
